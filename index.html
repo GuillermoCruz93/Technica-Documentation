@@ -16,7 +16,8 @@
                 <header>JavaScript</header>
                 <ul>
                     <li><a class="nav-link" href="#¿Que_es_JavaScript?">¿Qué es JavaScript?</a></li>
-                    <li><a class="nav-link" href="#Entonces_¿que_puede_hacer_realmente?"> Entonces¿que puede hacer realmente?</a></li>
+                    <li><a class="nav-link" href="#Entonces_¿que_puede_hacer_realmente?"> Entonces¿que puede hacer
+                            realmente?</a></li>
                     <li></li>
                     <li></li>
                     <li></li>
@@ -39,57 +40,61 @@
                         las
                         tecnologías web estándar, dos de las cuales (HTML y CSS) hemos cubierto con mucho más detalle en
                         otras partes del Área de aprendizaje.</p>
-                    <img src="https://mdn.mozillademos.org/files/13502/cake.png" alt="Pastel JavaScript">
-                    <li>HTML es el lenguaje de marcado que usamos para estructurar y dar significado a nuestro contenido
-                        web, por ejemplo, definiendo párrafos, encabezados y tablas de datos, o insertando imágenes y
-                        videos en la página.</li>
-                    <li>CSS es un lenguaje de reglas de estilo que usamos para aplicar estilo a nuestro contenido HTML,
-                        por ejemplo, establecer colores de fondo y tipos de letra, y distribuir nuestro contenido en
-                        múltiples columnas.</li>
-                    <li>JavaScript es un lenguaje de secuencias de comandos que te permite crear contenido de
-                        actualización dinámica, controlar multimedia, animar imágenes y prácticamente todo lo demás.
-                        (Está bien, no todo, pero es sorprendente lo que puedes lograr con unas pocas líneas de código
-                        JavaScript).</li>
+                    <div class="img-center">
+                        <img src="https://mdn.mozillademos.org/files/13502/cake.png" alt="Pastel JavaScript">
+                    </div>
+                    <ul>
+                        <li>HTML es el lenguaje de marcado que usamos para estructurar y dar significado a nuestro
+                            contenido
+                            web, por ejemplo, definiendo párrafos, encabezados y tablas de datos, o insertando imágenes
+                            y
+                            videos en la página.</li>
+                        <li>CSS es un lenguaje de reglas de estilo que usamos para aplicar estilo a nuestro contenido
+                            HTML,
+                            por ejemplo, establecer colores de fondo y tipos de letra, y distribuir nuestro contenido en
+                            múltiples columnas.</li>
+                        <li>JavaScript es un lenguaje de secuencias de comandos que te permite crear contenido de
+                            actualización dinámica, controlar multimedia, animar imágenes y prácticamente todo lo demás.
+                            (Está bien, no todo, pero es sorprendente lo que puedes lograr con unas pocas líneas de
+                            código
+                            JavaScript).</li>
+                    </ul>
                     <p>Las tres capas se superponen muy bien. Tomemos una etiqueta de texto simple como ejemplo. Podemos
                         marcarla usando HTML para darle estructura y propósito:</p>
                     <code> &lt;p&gt;Player 1: Chris&lt;/p&gt; </code>
                     <p>Luego, podemos agregar algo de CSS a la mezcla para que se vea bien:
 
                     </p>
-                    <pre>
-<code>
-p {
-    font-family: 'helvetica neue', helvetica, sans-serif;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    text-align: center;
-    border: 2px solid rgba(0,0,200,0.6);
-    background: rgba(0,0,200,0.3);
-    color: rgba(0,0,200,0.6);
-    box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
-    border-radius: 10px;
-    padding: 3px 10px;
-    display: inline-block;
-    cursor: pointer;
-  }
-</code>
-</pre>
 
-                    <img src="https://mdn.mozillademos.org/files/13424/html-and-css.png" alt="Player_1">
+                    <code>p {
+                        font-family: 'helvetica neue', helvetica, sans-serif;
+                        letter-spacing: 1px;
+                        text-transform: uppercase;
+                        text-align: center;
+                        border: 2px solid rgba(0,0,200,0.6);
+                        background: rgba(0,0,200,0.3);
+                        color: rgba(0,0,200,0.6);
+                        box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+                        border-radius: 10px;
+                        padding: 3px 10px;
+                        display: inline-block;
+                        cursor: pointer;
+                        }</code>
 
+                    <div class="img-center">
+                        <img src="https://mdn.mozillademos.org/files/13424/html-and-css.png" alt="Player_1">
+                    </div>
                     <p>Y finalmente, podemos agregar algo de JavaScript para implementar un comportamiento dinámico:</p>
-                    <pre>
-<code>
-const para = document.querySelector('p');
 
-para.addEventListener('click', updateName);
+                    <code>const para = document.querySelector('p');
 
-function updateName() {
-let name = prompt('Enter a new name');
-para.textContent = 'Player 1: ' + name;
-}
-</code>
-</pre>
+                        para.addEventListener('click', updateName);
+
+                        function updateName() {
+                        let name = prompt('Enter a new name');
+                        para.textContent = 'Player 1: ' + name;
+                        }</code>
+
                     <p>Intenta hacer clic en esta última versión de la etiqueta de texto para ver qué sucede (ten en
                         cuenta también que puedes encontrar esta demostración en GitHub — ¡consulta el <a
                             href="https://github.com/mdn/learning-area/blob/master/javascript/introduction-to-js-1/what-is-js/javascript-label.html">codigo
@@ -102,20 +107,20 @@ para.textContent = 'Player 1: ' + name;
             </section>
 
             <section class="main-section" id="Entonces_¿que_puede_hacer_realmente?">
-            <header>Entonces ¿que puede hacer realmente?</header>
-        </section>
+                <header>Entonces ¿que puede hacer realmente?</header>
+            </section>
 
             <section class="main-section">
-            <header></header>
-        </section>
+                <header></header>
+            </section>
 
             <section class="main-section">
-            <header></header>
-        </section>
+                <header></header>
+            </section>
 
             <section class="main-section">
-            <header></header>
-        </section>
+                <header></header>
+            </section>
         </main>
     </div>
 

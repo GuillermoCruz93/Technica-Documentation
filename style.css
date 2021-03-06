@@ -1,33 +1,33 @@
-*{
+* {
     box-sizing: border-box;
 }
 
-body, html{
+body,
+html {
     background-color: black;
     color: cadetblue;
-    font-family:Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.5;
     width: auto;
     padding: 0%;
+    text-align: justify;
 }
 
-#contenedor{
+#contenedor {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 
-#main-doc{
+#main-doc {
     grid-column: 4/12;
 }
 
-.main-section>header{
+.main-section>header {
     font-size: 2.5em;
-    font-weight: bold;    
+    font-weight: bold;
 }
 
-
-
-#menu{
+#menu {
     position: fixed;
     width: 16.66vw;
     top: 0px;
@@ -37,19 +37,22 @@ body, html{
     border-color: rgba(5, 245, 245, 0.4);
     grid-column: 1/2;
 }
-#navbar>header{
-    font-size:1.5em;
+
+#navbar>header {
+    font-size: 1.5em;
     text-align: center;
     font-weight: bold;
     padding-top: .5em;
     overflow-x: hidden;
 }
-#navbar ul{
+
+#navbar ul {
     padding: 0%;
     overflow-y: auto;
     overflow-x: hidden;
 }
-#navbar li{
+
+#navbar li {
     color: #4b4d57;
     border-top: 1px solid;
     list-style: none;
@@ -57,7 +60,7 @@ body, html{
     width: 100%;
 }
 
-#navbar a{
+#navbar a {
     display: block;
     padding: .4em 1em;
     color: #d3d3d3;
@@ -65,38 +68,68 @@ body, html{
     cursor: pointer;
 }
 
+code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: rgba(5, 245, 245, 0.4);
+    color: white;
+    padding: 1em;
+    margin: 1em;
+    border-radius: 8px;
+    grid-column: 2/12;
+}
+
+article {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+article>h2,
+p,
+li,
+ul,
+img,
+div {
+    grid-column: 1/13;
+}
+
+.img-center {
+    display: grid;
+    grid-column: 3/11;
+    align-self: center;
+}
+
+.img-center>img {
+    place-self: center;
+    width: 100%;
+    max-width: 19em;
+    margin: 1em;
+}
+
+
 
 /* Smartphones (portrait) ---------------- */
-@media only screen 
-and (max-width : 320px)
-{
-/* Add Your CSS Styling Here */
+@media only screen and (max-width : 320px) {
+    /* Add Your CSS Styling Here */
 }
 
 /* Smartphones (landscape) ---------------- */
-@media only screen 
-and (min-width : 321px)
-and (max-width : 767px)
-{
-/* Add Your CSS Styling Here */
+@media only screen and (min-width : 321px) and (max-width : 767px) {
+    /* Add Your CSS Styling Here */
 }
 
 /* Tablets (portrait) -------------------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait)
-{
-/* Add Your CSS Styling Here */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+    /* Add Your CSS Styling Here */
 }
 
 
 /* Tablets (landscape) ------------------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape)
-{   
-/* Add Your CSS Styling Here */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+    /* Add Your CSS Styling Here */
 }
-
