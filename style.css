@@ -10,7 +10,6 @@ html {
     line-height: 1.5;
     width: auto;
     padding: 0%;
-    text-align: justify;
 }
 
 #contenedor {
@@ -68,6 +67,23 @@ html {
     cursor: pointer;
 }
 
+article {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    font-size: 1em;
+}
+
+article>
+h2,
+p,
+li,
+ul,
+img,
+div,
+ol {
+    grid-column: 1/13;
+}
+
 code {
     display: block;
     text-align: left;
@@ -82,31 +98,20 @@ code {
     margin: 1em;
     border-radius: 8px;
     grid-column: 2/12;
+    overflow-y: auto;
+
 }
 
-article {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-}
-
-article>h2,
-p,
-li,
-ul,
-img,
-div {
-    grid-column: 1/13;
-}
-
-.img-center {
+.img.center {
     display: grid;
     grid-column: 3/11;
     align-self: center;
 }
 
-.img-center>img {
+.img.center>img {
     place-self: center;
     width: 100%;
+    height: auto;
     max-width: 19em;
     margin: 1em;
 }
